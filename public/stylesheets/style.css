@@ -1,8 +1,29 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 3000px;
 }
 
 a {
   color: #00B7FF;
+}
+
+header {
+  background-color: black;
+  margin-top: 0px;
+  padding: 3%;
+  position: sticky;
+}
+
+header h2 {
+  font-size: 4em;
+  color: #FFFFFF;
+}
+
+div.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
