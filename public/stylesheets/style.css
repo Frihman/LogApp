@@ -1,9 +1,8 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 3em "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
-  height: 3000px;
 }
 
 a {
@@ -18,7 +17,7 @@ header {
 }
 
 header h2 {
-  font-size: 4em;
+  font-size: 1.5em;
   color: #FFFFFF;
 }
 
@@ -26,4 +25,24 @@ div.sticky {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+}
+
+#maincontent {
+  margin: 0 auto;
+  width: 90%;
+}
+
+form {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+form textarea {
+  width: 90%;
+  height: 60%;  
+}
+
+.btnSubmit {
+  width: 50%;
 }

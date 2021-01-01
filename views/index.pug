@@ -1,4 +1,10 @@
 extends layout
 
 block content
-  p Welcome to #{title}
+  
+  div#maincontent
+    form(action='/addlog', method='POST')
+      h3 Create Log
+      textarea(name='content', rows='4')
+      input(type='submit', class='btnSubmit')
+
