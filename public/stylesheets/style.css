@@ -35,7 +35,6 @@ div.sticky {
 
 form {
   width: 90%;
-  
   margin: 0 auto;
 }
 
@@ -51,4 +50,5 @@ form textarea {
   font-size: 0.5em;
   -webkit-appearance: none;
   border-radius: 15px;
+  background-color: #ededed;
 }
