@@ -30,19 +30,19 @@ div.sticky {
 #maincontent {
   margin: 0 auto;
   width: 90%;
+  min-height: 1000px;
 }
 
 form {
   width: 90%;
-  height: 60%;
   
   margin: 0 auto;
 }
 
 form textarea {
   width: 90%;
-  height: 60%;
-  font-size: 3em;
+  min-height: 500px;
+  font-size: 1.5em;
 }
 
 .btnSubmit {
