@@ -34,13 +34,15 @@ div.sticky {
 
 form {
   width: 90%;
-  height: 500px;
+  height: 60%;
+  
   margin: 0 auto;
 }
 
 form textarea {
   width: 90%;
-  height: 60%;  
+  height: 60%;
+  font-size: 3em;
 }
 
 .btnSubmit {
