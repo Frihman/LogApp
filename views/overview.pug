@@ -1,8 +1,10 @@
 extends layout
 
 block content
-    h2 #{title}
-    hr
-    ul#entries
+    link(href='/stylesheets/overviewStyle.css' rel='stylesheet')
+    div#mainContent
+        h2 #{title}
+        hr
+        ul#entries
 
-    script(src='/javascripts/overview.js')
+        script(src='/javascripts/overview.js')
