@@ -4,7 +4,7 @@ Required features
 -Content
 -Date added
 -Favourite (true/false)
--Mood (Attached emoji, img code?)
+-Mood (Attached emoji, img code?, for now only "sad" and "happy")
 -Author (Id)
 
 JSON Template Logs
