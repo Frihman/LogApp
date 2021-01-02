@@ -47,3 +47,25 @@ var logs = [{
     "authorId" : 0  
 },
 ]
+
+var ul = document.getElementById('entries');
+
+var userLogs = logs.filter(x => x.authorId === 0);
+console.log(userLogs);
+
+userLogs.forEach(item => {
+    var li = document.createElement(li);
+    li.classList.add('entry');
+
+    var markup = `
+    <div class=entry>
+    <h3>${item.content}</h3>
+    <p class='entryMood'>${item.mood}</p>
+    <p class='entryDate'>${item.date}</p>
+    </div>
+    <hr>
+    `;
+
+    li.innerHTML = markup;
+    ul.appendChild(li);
+});
