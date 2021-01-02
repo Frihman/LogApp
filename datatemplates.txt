@@ -1,0 +1,37 @@
+## Logs
+Required features
+-Id
+-Content
+-Date added
+-Favourite (true/false)
+-Mood (Attached emoji, img code?)
+-Author (Id)
+
+JSON Template Logs
+
+{
+    "id" : "",
+    "content" : "",
+    "date" : "",
+    "favorite" : "",
+    "mood" : "",
+    "authorId" : ""
+}
+
+
+## Users
+Required features
+-Id
+-Username (First and last name not required in this case)
+-Email
+-Password
+
+JSON template Users
+
+{
+    "id" : "",
+    "username" : "",
+    "email" : "",
+    "password" : ""
+
+}
