@@ -35,3 +35,7 @@ ul hr {
 #entries {
     margin-top: 10px;
 }
+
+.entryMood {
+    font-size: 75px;
+}
