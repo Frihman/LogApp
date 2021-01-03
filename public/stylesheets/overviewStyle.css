@@ -5,6 +5,7 @@
 .entry {
     float: left;
     width:100%;
+    margin-bottom: 15px;
 }
 
 ul hr {
@@ -23,7 +24,14 @@ ul hr {
 
 }
 
-.moodFavorite img {
-    width: 7vw;
+.entry img {
+    width: 5vw;
 }
 
+.entryDate {
+    margin-bottom: 10px;
+}
+
+#entries {
+    margin-top: 10px;
+}

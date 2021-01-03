@@ -63,14 +63,14 @@ userLogs.forEach(item => {
     <div class='contentDate'>
     <h3>${item.content}</h3>
     <p class='entryDate'>${item.date}</p>
-    </div>
-    <div class='moodFavorite'>
-    <p class='entryMood'>${item.mood}</p>
     `;
 
     if (item.favorite == 'true') {
         cMarkup = `
         <img src='/images/star-filled.png'>
+        </div>
+        <div class='moodFavorite'>
+        <p class='entryMood'>${item.mood}</p>
         </div>
         </div>
         <hr>
@@ -79,9 +79,11 @@ userLogs.forEach(item => {
         cMarkup = `
         <img src='/images/star.png'>
         </div>
+        <div class='moodFavorite'>
+        <p class='entryMood'>${item.mood}</p>
+        </div>
         </div>
         <hr>
-        
         `;
     }
 
