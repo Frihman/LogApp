@@ -24,7 +24,7 @@ var logs = [{
 },
 {
     "id" : 3,
-    "content" : "I very sad, no more chrimbus",
+    "content" : "I very sad, no more chrimbus nooo ooooooo oooooo ooooo ooooo",
     "date" : "2020-12-29",
     "favorite" : "false",
     "mood" : "🙁",
@@ -59,25 +59,29 @@ userLogs.forEach(item => {
     var cMarkup
 
     var markup = `
-    <div class=entry>
+    <div class='entry'>
+    <div class='contentDate'>
     <h3>${item.content}</h3>
+    <p class='entryDate'>${item.date}</p>
+    </div>
+    <div class='moodFavorite'>
     <p class='entryMood'>${item.mood}</p>
-    
     `;
 
     if (item.favorite == 'true') {
         cMarkup = `
-        <img src='/images/star-filled.png' class='star'>
-        <p class='entryDate'>${item.date}</p>
+        <img src='/images/star-filled.png'>
+        </div>
         </div>
         <hr>
         `;
     } else {
         cMarkup = `
-        <img src='/images/star.png' class='star'>
-        <p class='entryDate'>${item.date}</p>
+        <img src='/images/star.png'>
+        </div>
         </div>
         <hr>
+        
         `;
     }
 

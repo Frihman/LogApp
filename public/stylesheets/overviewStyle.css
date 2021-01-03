@@ -2,6 +2,28 @@
     margin-left: 2%;  
 }
 
+.entry {
+    float: left;
+    width:100%;
+}
+
 ul hr {
     margin-right: 3%;
 }
+
+.contentDate {
+    float: left; 
+    max-width: 60%;
+}
+
+.moodFavorite {
+    float: right;
+    margin-right: 10%;
+    width: 10%;
+
+}
+
+.moodFavorite img {
+    width: 7vw;
+}
+
