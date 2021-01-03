@@ -8,10 +8,11 @@ block content
       textarea(name='content', rows='4')
       br
       div#selections
+        label(for='favorite') Favorite
+        input(type='checkbox' name='favorite' id='checkbox' value='true')
         select(name='moods')
           option(value='😃') 😃
           option(value='🙁') 🙁
-        label(for='favorite') Favorite
-        input(type='checkbox' name='favorite' value='true')
+        
       input(type='submit', class='btnSubmit', value='Submit log')
 
