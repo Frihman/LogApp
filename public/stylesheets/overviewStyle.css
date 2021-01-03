@@ -1,0 +1,41 @@
+#mainContent h2 {
+    margin-left: 2%;  
+}
+
+.entry {
+    float: left;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+ul hr {
+    margin-right: 3%;
+}
+
+.contentDate {
+    float: left; 
+    max-width: 60%;
+}
+
+.moodFavorite {
+    float: right;
+    margin-right: 10%;
+    width: 10%;
+
+}
+
+.entry img {
+    width: 5vw;
+}
+
+.entryDate {
+    margin-bottom: 10px;
+}
+
+#entries {
+    margin-top: 10px;
+}
+
+.entryMood {
+    font-size: 75px;
+}

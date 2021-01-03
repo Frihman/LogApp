@@ -46,9 +46,45 @@ form textarea {
 
 .btnSubmit {
   width: 20%;
-  height: 10vw;
+  height: 8vw;
   font-size: 0.5em;
   -webkit-appearance: none;
   border-radius: 15px;
   background-color: #ededed;
 }
+
+#selections {
+  float: right;
+  width: 45%;
+  height: 10vw;
+  font-size: 0.5em;
+  margin-right: 9%;
+}
+
+#selections select {
+  width: 45%;
+  height: 75%;
+  font-size: 140%;
+  margin-left: 13%;
+}
+
+#selections label {
+  font-size: 120%;
+  margin-right: 2%;
+}
+
+#checkbox {
+  width: 30px;
+  height: 30px;
+  
+}
+
+/**
+#vl {
+  border-left: 1px solid black;
+  height: 6vw;
+  width: 1px;
+  margin: 0 0 0 0;
+  
+}
+*/

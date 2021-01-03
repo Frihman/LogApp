@@ -1,10 +1,11 @@
 doctype html
 html
   head
-    title= title
+    title Log App - #{title}
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     div.sticky
       header
-        h2 #{title}
+        a(href='/')
+          h2 Log App
     block content
