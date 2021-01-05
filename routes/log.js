@@ -13,4 +13,41 @@ router.get('/', function(req, res, next) {
   
 });
 
+router.post('/', function(req, res, next) {
+    fs.readFile(__dirname + '/../data/logs.json', (err, data) => {
+        if (err) {
+            throw err;
+        }
+
+        var dataArray = JSON.parse(data);
+        
+        var dateNow = new Date();
+        var logId = dataArray.length;
+
+        var log = {
+            "id": logId,
+            "content": req.body.content,
+            "date": dateNow,
+            "favorite": req.body.favorite,
+            "mood": req.body.mood,
+            "authorId": 0
+        }
+
+        dataArray.push(log);
+
+        writeFile(dataArray);
+    });
+
+    function writeFile(data) {
+        fs.writeFile(__dirname + '/../data/logs.json', JSON.stringify(data), (err) => {
+            if (err) {
+                throw err;
+            }
+
+            res.send(data);
+        });
+    }
+
+});
+
 module.exports = router;
