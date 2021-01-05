@@ -3,16 +3,16 @@ extends layout
 block content
   
   div#maincontent
-    form(action='/addlog', method='POST')
+    form(action='/log', method='POST')
       h3 Create Log
       textarea(name='content', rows='4')
       br
       div#selections
         label(for='favorite') Favorite
-        input(type='checkbox' name='favorite' id='checkbox' value='true')
-        select(name='moods')
-          option(value='happy') 😃
-          option(value='sad') 🙁
+        input(type='checkbox' name='favorite' id='favorite' value='favorite')
+        select(name='mood')
+          option(value='😃') 😃
+          option(value='🙁') 🙁
         
       input(type='submit', class='btnSubmit', value='Submit log')
 

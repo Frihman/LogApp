@@ -23,12 +23,19 @@ router.post('/', function(req, res, next) {
         
         var dateNow = new Date();
         var logId = dataArray.length;
+        var favorite;
+
+        if (typeof req.body.favorite != 'undefined') {
+            favorite = 'true';
+        } else {
+            favorite = 'false';
+        }
 
         var log = {
             "id": logId,
             "content": req.body.content,
             "date": dateNow,
-            "favorite": req.body.favorite,
+            "favorite": favorite,
             "mood": req.body.mood,
             "authorId": 0
         }
@@ -44,7 +51,7 @@ router.post('/', function(req, res, next) {
                 throw err;
             }
 
-            res.send(data);
+            res.redirect('/');
         });
     }
 
