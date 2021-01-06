@@ -10,13 +10,23 @@ var userLogs = data.filter(x => x.authorId === 0);
 userLogs.forEach(item => {
     var li = document.createElement(li);
     li.classList.add('entry');
-    var cMarkup
+    var cMarkup;
+
+    var date = item.date.replace(/T/g, ' ');
+
+    var dateSplit = date.split('');
+
+    for (var i = 0; i < 8; i++) {
+        dateSplit.pop();
+    }
+
+    date = dateSplit.join('');
 
     var markup = `
     <div class='entry'>
     <div class='contentDate'>
     <h3>${item.content}</h3>
-    <p class='entryDate'>${item.date}</p>
+    <p class='entryDate'>${date}</p>
     `;
 
     if (item.favorite == 'true') {
