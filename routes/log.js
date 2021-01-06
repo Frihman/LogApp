@@ -22,6 +22,7 @@ router.post('/', function(req, res, next) {
         var dataArray = JSON.parse(data);
         
         var dateNow = new Date();
+        dateNow.setHours(dateNow.getHours() + 1);
         var logId = dataArray.length;
         var favorite;
 
