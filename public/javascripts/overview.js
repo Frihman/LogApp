@@ -7,6 +7,8 @@ var ul = document.getElementById('entries');
 
 var userLogs = data.filter(x => x.authorId === 0);
 
+userLogs = userLogs.reverse();
+
 userLogs.forEach(item => {
     var li = document.createElement(li);
     li.classList.add('entry');
