@@ -1,68 +1,34 @@
-var logs = [{
-    "id" : 0,
-    "content" : "God Jul!",
-    "date" : "2020-12-24",
-    "favorite" : "true",
-    "mood" : "😃",
-    "authorId" : 0
-},
-{
-    "id" : 1,
-    "content" : "Merry Christmas!",
-    "date" : "2020-12-25",
-    "favorite" : "true",
-    "mood" : "😃",
-    "authorId" : 0  
-},
-{
-    "id" : 2,
-    "content" : "Happy Boxing Day!",
-    "date" : "2020-12-26",
-    "favorite" : "false",
-    "mood" : "😃",
-    "authorId" : 0  
-},
-{
-    "id" : 3,
-    "content" : "I very sad, no more chrimbus nooo ooooooo oooooo ooooo ooooo",
-    "date" : "2020-12-29",
-    "favorite" : "false",
-    "mood" : "🙁",
-    "authorId" : 0  
-},
-{
-    "id" : 4,
-    "content" : "It's New Years Eve!",
-    "date" : "2020-12-31",
-    "favorite" : "false",
-    "mood" : "😃",
-    "authorId" : 0  
-},
-{
-    "id" : 5,
-    "content" : "Goodbye 2020!",
-    "date" : "2021-01-01",
-    "favorite" : "true",
-    "mood" : "😃",
-    "authorId" : 0  
-},
-]
 
+
+fetch(window.location.origin + '/log')
+.then(response => response.json())
+.then(data => {
 var ul = document.getElementById('entries');
 
-var userLogs = logs.filter(x => x.authorId === 0);
-console.log(userLogs);
+var userLogs = data.filter(x => x.authorId === 0);
+
+userLogs = userLogs.reverse();
 
 userLogs.forEach(item => {
     var li = document.createElement(li);
     li.classList.add('entry');
-    var cMarkup
+    var cMarkup;
+
+    var date = item.date.replace(/T/g, ' ');
+
+    var dateSplit = date.split('');
+
+    for (var i = 0; i < 8; i++) {
+        dateSplit.pop();
+    }
+
+    date = dateSplit.join('');
 
     var markup = `
     <div class='entry'>
     <div class='contentDate'>
     <h3>${item.content}</h3>
-    <p class='entryDate'>${item.date}</p>
+    <p class='entryDate'>${date}</p>
     `;
 
     if (item.favorite == 'true') {
@@ -89,4 +55,10 @@ userLogs.forEach(item => {
 
     li.innerHTML = markup + cMarkup;
     ul.appendChild(li);
+    });
+
 });
+
+
+
+
