@@ -39,7 +39,7 @@ form {
 }
 
 form textarea {
-  width: 100%;
+  width: 90%;
   min-height: 300px;
   font-size: 1.3em;
 }
