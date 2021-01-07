@@ -1,5 +1,6 @@
 #mainContent h2 {
-    margin-left: 2%;  
+    margin-left: 2%;
+    margin-bottom: 1%; 
 }
 
 .entry {
@@ -38,4 +39,12 @@ ul hr {
 
 .entryMood {
     font-size: 75px;
+}
+
+#moodFilter {
+    width: 15%;
+    height: 8vw;
+    margin-left: 2%;
+    font-size: 1.1em;
+
 }

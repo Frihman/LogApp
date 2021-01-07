@@ -4,6 +4,11 @@ block content
     link(href='/stylesheets/overviewStyle.css' rel='stylesheet')
     div#mainContent
         h2 #{title}
+        select(name='moodFilter' id='moodFilter')
+          option(value='all') All
+          option(value='😃') 😃
+          option(value='😐') 😐
+          option(value='🙁') 🙁
         hr
         ul#entries
 
