@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var session = require('express-session');
 
 router.get('/', function(req, res, next) {
   fs.readFile(__dirname + '/../data/logs.json', (err, data) => {
@@ -51,7 +52,8 @@ router.post('/', function(req, res, next) {
             if (err) {
                 throw err;
             }
-
+            
+            req.session.valid = true;
             res.redirect('/');
         });
     }
