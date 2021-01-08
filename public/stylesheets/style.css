@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-a {
+.title {
   color: #00B7FF;
 }
 
@@ -30,7 +30,7 @@ div.sticky {
 #maincontent {
   margin: 0 auto;
   width: 90%;
-  min-height: 1000px;
+  min-height: 800px;
 }
 
 form {
@@ -40,8 +40,8 @@ form {
 
 form textarea {
   width: 90%;
-  min-height: 200px;
-  font-size: 1.2em;
+  min-height: 300px;
+  font-size: 1.3em;
 }
 
 .btnSubmit {
@@ -58,7 +58,6 @@ form textarea {
   width: 45%;
   height: 10vw;
   font-size: 0.5em;
-  margin-right: 9%;
 }
 
 #selections select {
@@ -78,3 +77,31 @@ form textarea {
   height: 30px;
   
 }
+
+#overviewLink {
+  text-decoration: none;
+  margin: 0 auto;
+  color: black;
+  border: 1px solid black;
+  width:40%;
+  padding: 2%;
+  text-align: center;
+  background-color: #ededed;
+  border-radius: 5px;
+  margin-top: 10%;
+  display: block;
+  
+}
+
+#logAdded {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  color: green;
+  margin-top: 10%;
+}
+
+#logAddedCheck {
+  display: none;
+}
+
